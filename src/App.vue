@@ -1,17 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloDefaluts msg="Welcome to Your Vue.js App" />
+    <countUpHi />
+    <obHi />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloDefaluts from './components/HelloWorld.vue';
+import countUpHi from './components/countUp.vue';
+import obHi from './components/objectFor.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    HelloDefaluts,
+    countUpHi,
+    obHi,
+  },
+};
 </script>
 
 <style>
